@@ -55,9 +55,10 @@ def checkout(cart, coupons)
     consolidate_cart(cart)
     apply_coupons(cart, coupons)
     if coupons == false
-      apply_clearance 
+      apply_clearance
 
   end
+end
   total_price = 0
   cart.each do |hash|
     hash.each do |key, value|
