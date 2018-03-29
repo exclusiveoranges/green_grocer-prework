@@ -55,7 +55,7 @@ def checkout(cart, coupons)
     consolidate_cart(cart)
     apply_coupons(cart, coupons)
     if coupons == false
-      apply_clearance
+      apply_clearance(cart)
 
   end
 end
