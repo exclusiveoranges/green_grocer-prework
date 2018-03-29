@@ -50,6 +50,8 @@ end
 
 
 def checkout(cart, coupons)
+  if cart.length == 1
+    consolidate_cart
   total_price = 0
   cart.each do |hash|
     hash.each do |key, value|
