@@ -52,7 +52,7 @@ end
 def checkout(cart, coupons)
   if cart.length == 1
     consolidate_cart(cart)
-    apply_coupons(cart)
+    apply_coupons(cart, coupons)
   end
   total_price = 0
   cart.each do |hash|
