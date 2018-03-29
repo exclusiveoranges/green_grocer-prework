@@ -59,7 +59,7 @@ def checkout(cart, coupons)
       total_price += new_cart_clearance[key][:price] * new_cart_clearance[key][:count]
     end
   if total_price > 100
-    total_price = total_price * .9
+    total_price = total_price * 0.9
   end
     total_price.round(2)
 end
