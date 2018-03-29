@@ -58,7 +58,8 @@ def checkout(cart, coupons)
       # binding.pry
       total_price += new_cart_clearance[key][:price] * new_cart_clearance[key][:count]
     end
-  if total_price.round(2) > 100
-    new_price = total_price * .9
-    new_price.round(2)
+  if total_price > 100
+    total_price = total_price * .9
+  end
+    total_price.round(2)
 end
