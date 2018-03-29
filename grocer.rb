@@ -50,7 +50,7 @@ end
 
 
 def checkout(cart, coupons)
-
+binding.pry
   total_price = 0
   cart.each do |hash|
     hash.each do |key, value|
