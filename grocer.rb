@@ -54,7 +54,7 @@ binding.pry
   total_price = 0
   cart.each do |hash|
     hash.each do |key, value|
-      total_price += hash[key][:price]
+      total_price += hash[key][:price] * hash[key][:count]
     end
   end
   total_price
