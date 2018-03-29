@@ -57,5 +57,5 @@ binding.pry
       total_price += hash[key][:price] * hash[key][:count]
     end
   end
-  total_price
+  total_price.round(2)
 end
